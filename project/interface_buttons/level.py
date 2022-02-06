@@ -7,3 +7,4 @@ class Level:
         self.pos = (50,0)
     def draw(self,screen):
         screen.blit(self.image, self.pos)
+

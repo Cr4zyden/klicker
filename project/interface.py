@@ -1,3 +1,5 @@
+import pygame
+
 from interface_buttons.seed import Seed
 from interface_buttons.name import Name
 from interface_buttons.level import Level
@@ -14,3 +16,6 @@ class Interface:
         self.seed.draw(screen)
         self.name.draw(screen)
         self.level.draw(screen)
+    def draw_healt_bar(self,screen):
+        rect = pygame.Rect(100,60,300,50)
+        pygame.draw.rect(screen, (255, 0, 0), rect, 0)
